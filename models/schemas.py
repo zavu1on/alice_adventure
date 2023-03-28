@@ -13,9 +13,9 @@ class Dialog:
 
 class Choice:
     def __init__(self, args: tuple):
-        self.id = args[0]
+        self.id = args[2]
         self.choice = args[1]
-        self.next_dialog_id = args[2]
+        self.next_dialog_id = args[0]
 
     def __str__(self):
         return self.choice
